@@ -15,10 +15,10 @@ public class CoursesHardcodedService {
     private static long idCounter = 0;
 
     static {
-        courses.add(new Course(++idCounter, "hch0821", "Learn Full stack with Spring Boot1"));
-        courses.add(new Course(++idCounter, "hch0821", "Learn Full stack with Spring Boot2"));
-        courses.add(new Course(++idCounter, "hch0821", "Learn Full stack with Spring Boot3"));
-        courses.add(new Course(++idCounter, "hch0821", "Learn Full stack with Spring Boot4"));
+        courses.add(new Course(++idCounter, "hch0821", "1번 항목"));
+        courses.add(new Course(++idCounter, "hch0821", "2번 항목"));
+        courses.add(new Course(++idCounter, "hch0821", "3번 항목"));
+        courses.add(new Course(++idCounter, "hch0821", "4번 항목"));
     }
 
     public List<Course> findAll() {

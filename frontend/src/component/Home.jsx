@@ -7,6 +7,7 @@ const Mainp = styled.p`
   text-align: center;
   font-weight: 500;
   font-size: 20px;
+  padding-top: 50px;
 `;
 
 function Home() {
@@ -14,11 +15,9 @@ function Home() {
 
     return (
         <div>
-            <Mainp>Welcome</Mainp>
-            <ul className="navbar-nav navbar-collapse justify-content-end">
-              {!isUserLoggedIn && <li><Link className="nav-link" to="/login">Login</Link></li>}
-              {isUserLoggedIn && <li><Link className="nav-link" to="/logout" onClick={AuthenticationService.logout}>Logout</Link></li>}
-            </ul>
+            <Mainp>설탕없는 식탁 Dr.True</Mainp>
+            {!isUserLoggedIn && <p>로그인 후 이용해주세요</p>}
+            {isUserLoggedIn && <p>환영합니다</p>}
         </div>
     );
 }

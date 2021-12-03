@@ -7,15 +7,16 @@ import LoginComponent from './LoginComponent';
 import LogoutComponent from './LogoutComponent';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Switch, Route } from 'react-router';
-import Header from './Header';
 import Home from './Home';
+import Header_Logo from './Header_Logo';
 
 function InstructorApp() {
     return (
         <>
             <Router>
                 <>
-                <Header />
+                <Header_Logo />
+                <MenuComponent />
                     <Switch>
                         <Route path="/" exact component={Home} />
                         <Route path="/login" exact component={LoginComponent} />
