@@ -1,5 +1,5 @@
 import axios from 'axios';
-const INSTRUCTOR = 'hch0821';
+const INSTRUCTOR = 'drtrue';
 const PASSWORD = '1234';
 const INSTRUCTOR_API_URL = `/instructors/${INSTRUCTOR}`;
 

@@ -10,7 +10,7 @@ export default function ListCoursesComponent() {
     const [courses, setCourses] = useState([]);
     const [message, setMessage] = useState(null);
     const refreshCourses = useCallback(() => {
-        CourseDataService.retrieveAllCourses('hch0821').then(
+        CourseDataService.retrieveAllCourses('drtrue').then(
             response => {
                 console.log(response);
                 setCourses(response.data);

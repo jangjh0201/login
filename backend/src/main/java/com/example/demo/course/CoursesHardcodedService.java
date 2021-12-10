@@ -15,10 +15,10 @@ public class CoursesHardcodedService {
     private static long idCounter = 0;
 
     static {
-        courses.add(new Course(++idCounter, "hch0821", "1번 항목"));
-        courses.add(new Course(++idCounter, "hch0821", "2번 항목"));
-        courses.add(new Course(++idCounter, "hch0821", "3번 항목"));
-        courses.add(new Course(++idCounter, "hch0821", "4번 항목"));
+        courses.add(new Course(++idCounter, "drtrue", "1번 항목"));
+        courses.add(new Course(++idCounter, "drtrue", "2번 항목"));
+        courses.add(new Course(++idCounter, "drtrue", "3번 항목"));
+        courses.add(new Course(++idCounter, "drtrue", "4번 항목"));
     }
 
     public List<Course> findAll() {

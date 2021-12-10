@@ -36,7 +36,7 @@ const Submitbtn = styled.button`
 
 export default function LoginComponent(props) {
     const [state, setState] = useState({
-        username: 'hch0821',
+        username: '',
         password: '',
         hasLoginFailed: false,
         showSuccessMessage: false
